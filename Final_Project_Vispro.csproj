@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD0ED428-0955-4F5D-8298-D4FD9329B848}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final_Project_Vispro</RootNamespace>
+    <AssemblyName>Final_Project_Vispro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_log.Designer.cs">
+      <DependentUpon>admin_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_password_profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_password_profil.Designer.cs">
+      <DependentUpon>change_password_profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="employe_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employe_log.Designer.cs">
+      <DependentUpon>employe_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStruk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStruk.Designer.cs">
+      <DependentUpon>FrmStruk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="history.Designer.cs">
+      <DependentUpon>history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paketMobilKecil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paketMobilKecil.Designer.cs">
+      <DependentUpon>paketMobilKecil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paketMotorKecil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paketMotorKecil.Designer.cs">
+      <DependentUpon>paketMotorKecil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paket_mobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paket_mobil.Designer.cs">
+      <DependentUpon>paket_mobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paket_motor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paket_motor.Designer.cs">
+      <DependentUpon>paket_motor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile_employee.Designer.cs">
+      <DependentUpon>profile_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="services.Designer.cs">
+      <DependentUpon>services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign_in_employe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign_in_employe.Designer.cs">
+      <DependentUpon>sign_in_employe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipeMobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipeMobil.Designer.cs">
+      <DependentUpon>TipeMobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipeMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipeMotor.Designer.cs">
+      <DependentUpon>TipeMotor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_log.resx">
+      <DependentUpon>admin_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_password_profil.resx">
+      <DependentUpon>change_password_profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employe_log.resx">
+      <DependentUpon>employe_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStruk.resx">
+      <DependentUpon>FrmStruk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="history.resx">
+      <DependentUpon>history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paketMobilKecil.resx">
+      <DependentUpon>paketMobilKecil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paketMotorKecil.resx">
+      <DependentUpon>paketMotorKecil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paket_mobil.resx">
+      <DependentUpon>paket_mobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paket_motor.resx">
+      <DependentUpon>paket_motor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile_employee.resx">
+      <DependentUpon>profile_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="services.resx">
+      <DependentUpon>services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign_in_employe.resx">
+      <DependentUpon>sign_in_employe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipeMobil.resx">
+      <DependentUpon>TipeMobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipeMotor.resx">
+      <DependentUpon>TipeMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-automatic-car-wash-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-services-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cars-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-motorcycle-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
